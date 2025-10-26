@@ -41,7 +41,7 @@ let lingers = [
 
 let blinking = [
   'blinking eye', 'marrowed husk', 'boundless dark', 'hyphened tongue', 'fluent shadow', 'surviving particle '
-]
+] 
 let repeats = [
   'repeats', 'recites', 'remembers', 'forgets', 'simmers', 'exhumes'
 ]
