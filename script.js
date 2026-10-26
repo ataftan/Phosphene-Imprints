@@ -83,7 +83,7 @@ let impermanence = [
 
 
 function preload() {
-  myFont = loadFont("https://cdn.glitch.global/f5921b5b-17b6-4028-95de-016257411e19/Director-Regular.otf?v=1719098950449");
+  myFont = loadFont("Director-Regular.otf");
 }
 
 function setup() {
