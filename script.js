@@ -41,7 +41,7 @@ let lingers = [
 
 let blinking = [
   'blinking eye', 'marrowed husk', 'boundless dark', 'hyphened tongue', 'fluent shadow', 'surviving particle '
-] 
+]
 let repeats = [
   'repeats', 'recites', 'remembers', 'forgets', 'simmers', 'exhumes'
 ]
@@ -82,13 +82,12 @@ let impermanence = [
 ]
 
 
-function preload() {
-  myFont = loadFont("Director-Regular.otf");
-}
 
-function setup() {
-  textFont(myFont);
+async function setup() {
+
   createCanvas(windowWidth, windowHeight);
+  myFont = await loadFont("Director-Regular.otf");
+  textFont(myFont);
   background(255);
   textAlign(CENTER);
   textSize(12);
@@ -203,9 +202,9 @@ function story(scene) {
   if (scene == 8) {
     sentence = "notice " + random(whattheyarewearing) + ", they have no interior power, as ethereal objects";
     let s8;
-    s8= 'somehow they take the task of guiding you in unexpected, implemented tugs.'
+    s8 = 'somehow they take the task of guiding you in unexpected, implemented tugs.'
     text(sentence, random(100, windowWidth - 500), random(100, windowHeight - 200), 300);
-        text(s8, random(100, 0.66 * windowWidth), random(windowHeight - 200, windowHeight - 400), 300);
+    text(s8, random(100, 0.66 * windowWidth), random(windowHeight - 200, windowHeight - 400), 300);
 
     textWrap(WORD);
   }
