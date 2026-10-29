@@ -1,5 +1,5 @@
 
-var myFont;
+let myFont;
 
 let scene = 0;
 
@@ -82,11 +82,15 @@ let impermanence = [
 ]
 
 
-
+// function preload() {
+//   myFont = loadFont("./Director-Regular.otf");
+// } 
+// async 
+// let myFont;
 async function setup() {
 
   createCanvas(windowWidth, windowHeight);
-  myFont = await loadFont("Director-Regular.otf");
+  myFont = await loadFont('Director-Regular.otf');
   textFont(myFont);
   background(255);
   textAlign(CENTER);
